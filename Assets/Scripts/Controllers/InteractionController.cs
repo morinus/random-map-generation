@@ -5,7 +5,7 @@ namespace Smorb.Controllers
 {
     public class InteractionController : MonoBehaviour
     {
-        [SerializeField] private GameObject interactUI;
+        [SerializeField] private GameObject interactText;
 
         private bool isNextToButton = false;
 
@@ -23,7 +23,7 @@ namespace Smorb.Controllers
 
         private void OnTriggerEnter(Collider other)
         {
-            if (other.CompareTag("Finish"))
+            if (other.CompareTag("Button"))
             {
                 SetActiveInteractScreen(true);
                 isNextToButton = true;
@@ -32,7 +32,7 @@ namespace Smorb.Controllers
 
         private void OnTriggerExit(Collider other)
         {
-            if (other.CompareTag("Finish"))
+            if (other.CompareTag("Button"))
             {
                 SetActiveInteractScreen(false);
                 isNextToButton = false;
@@ -41,7 +41,7 @@ namespace Smorb.Controllers
 
         private void SetActiveInteractScreen(bool isActive)
         {
-            interactUI.SetActive(isActive);
+            interactText.SetActive(isActive);
         }
     }
 }
