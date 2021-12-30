@@ -18,6 +18,9 @@ namespace Smorb.Controllers
 
             spawnController.SpawnObjectToRandomLocation(buttonPrefab);
             spawnController.SpawnObjectToRandomLocation(playerPrefab);
+
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
         }
     }
 }
