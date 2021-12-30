@@ -368,6 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnController: {fileID: 1979829018}
+  mapGeneration: {fileID: 825120953}
   playerPrefab: {fileID: 5582626844771572964, guid: 689c2e447e0997e408d5fa9e7b39d7d0, type: 3}
 --- !u!1 &1681197466
 GameObject:

@@ -16,11 +16,6 @@ namespace Smorb.ProceduralGeneration
         public int MapDepthInTiles { get => mapDepthInTiles; }
 
 
-        private void Start()
-        {
-            GenerateMap();
-        }
-
         public void GenerateMap()
         {
             var tileSize = tilePrefab.GetComponent<MeshRenderer>().bounds.size;

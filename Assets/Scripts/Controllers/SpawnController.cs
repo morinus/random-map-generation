@@ -23,7 +23,7 @@ namespace Smorb.Controllers
                 if (hit.transform.CompareTag("Ground"))
                 {
                     player.transform.position = new Vector3(player.transform.position.x,
-                                                            distanceToGround - player.transform.position.y,
+                                                            distanceToGround - player.transform.position.y + Consts.SPAWN_OFFSET_Y,
                                                             player.transform.position.z);
                 }
             }
