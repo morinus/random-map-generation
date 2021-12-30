@@ -12,6 +12,9 @@ namespace Smorb.ProceduralGeneration
         [SerializeField] private Transform worldTransform;
         [SerializeField] private GameObject tilePrefab;
 
+        public int MapWidthInTiles { get => mapWidthInTiles; }
+        public int MapDepthInTiles { get => mapDepthInTiles; }
+
 
         private void Start()
         {
@@ -24,9 +27,9 @@ namespace Smorb.ProceduralGeneration
             var tileWidth = (int)tileSize.x;
             var tileDepth = (int)tileSize.z;
 
-            for (int xTileIndex = 0; xTileIndex < mapWidthInTiles; ++xTileIndex)
+            for (int xTileIndex = 0; xTileIndex < MapWidthInTiles; ++xTileIndex)
             {
-                for (int zTileIndex = 0; zTileIndex < mapDepthInTiles; ++zTileIndex)
+                for (int zTileIndex = 0; zTileIndex < MapDepthInTiles; ++zTileIndex)
                 {
                     var tilePosition = new Vector3(this.gameObject.transform.position.x + xTileIndex * tileWidth,
                         this.gameObject.transform.position.y,
