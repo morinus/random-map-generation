@@ -320,8 +320,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0116c61707c98c41876f27a64b3b851, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mapWidthInTiles: 10
-  mapDepthInTiles: 10
+  mapWidthInTiles: 50
+  mapDepthInTiles: 50
   worldTransform: {fileID: 798981732}
   tilePrefab: {fileID: 1650390741937098, guid: 48ff8f578d9b5a44e998a8f066cfe9a8, type: 3}
 --- !u!1 &1681197466
