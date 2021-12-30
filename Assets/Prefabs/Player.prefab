@@ -168,7 +168,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 129dc2aa85be84147b49425fe2c290b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  interactText: {fileID: 0}
+  interactText: {fileID: 7307876506052462042}
 --- !u!143 &4691791678020190104
 CharacterController:
   m_ObjectHideFlags: 0
