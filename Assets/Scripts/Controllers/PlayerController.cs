@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Smorb
+namespace Smorb.Controllers
 {
     public class PlayerController : MonoBehaviour
     {
