@@ -8,6 +8,7 @@ namespace Smorb.Controllers
         [SerializeField] private Transform worldTransform;
         [SerializeField] private MapGeneration mapGeneration;
 
+
         public void SpawnObjectToRandomLocation(GameObject prefab)
         {
             var randomPositionX = Random.Range(1, mapGeneration.MapDepthInTiles * Consts.TILE_SIZE);

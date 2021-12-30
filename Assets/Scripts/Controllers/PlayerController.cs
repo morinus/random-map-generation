@@ -7,11 +7,11 @@ namespace Smorb.Controllers
     {
         private CharacterController characterController;
 
+        [SerializeField] private Camera playerCamera;
         [SerializeField] private float walkingSpeed = 7.5f;
         [SerializeField] private float runningSpeed = 11.5f;
         [SerializeField] private float jumpSpeed = 8.0f;
         [SerializeField] private float gravity = 20.0f;
-        [SerializeField] private Camera playerCamera;
         [SerializeField] private float lookSpeed = 2.0f;
         [SerializeField] private float lookXLimit = 45.0f;
 

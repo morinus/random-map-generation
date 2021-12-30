@@ -370,6 +370,7 @@ MonoBehaviour:
   spawnController: {fileID: 1979829018}
   mapGeneration: {fileID: 825120953}
   playerPrefab: {fileID: 5582626844771572964, guid: 689c2e447e0997e408d5fa9e7b39d7d0, type: 3}
+  buttonPrefab: {fileID: 6929644855447449724, guid: 0f6786d9f1a606348baff6aae6e3508e, type: 3}
 --- !u!1 &1681197466
 GameObject:
   m_ObjectHideFlags: 0
