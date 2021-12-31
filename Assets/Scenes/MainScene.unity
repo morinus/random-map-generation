@@ -514,10 +514,6 @@ MonoBehaviour:
   mapWidthInTiles: 30
   mapDepthInTiles: 30
   worldTransform: {fileID: 798981732}
-  tilePrefabs:
-  - {fileID: 1650390741937098, guid: 22822452c1597694d98b13199cc4a440, type: 3}
-  - {fileID: 1650390741937098, guid: 48ff8f578d9b5a44e998a8f066cfe9a8, type: 3}
-  - {fileID: 1650390741937098, guid: bbcaf4e75c18e684989d98a5c78deb9c, type: 3}
 --- !u!1 &825175136
 GameObject:
   m_ObjectHideFlags: 0
@@ -775,6 +771,10 @@ MonoBehaviour:
   mapGeneration: {fileID: 825120953}
   playerPrefab: {fileID: 5582626844771572964, guid: 689c2e447e0997e408d5fa9e7b39d7d0, type: 3}
   buttonPrefab: {fileID: 6929644855447449724, guid: 0f6786d9f1a606348baff6aae6e3508e, type: 3}
+  tilePrefabs:
+  - {fileID: 1650390741937098, guid: 22822452c1597694d98b13199cc4a440, type: 3}
+  - {fileID: 1650390741937098, guid: 48ff8f578d9b5a44e998a8f066cfe9a8, type: 3}
+  - {fileID: 1650390741937098, guid: bbcaf4e75c18e684989d98a5c78deb9c, type: 3}
 --- !u!1 &1508666500
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,9 +8,9 @@ namespace Smorb.Controllers
         [SerializeField] private SpawnController spawnController;
         [SerializeField] private MapGeneration mapGeneration;
 
-        [SerializeField] private GameObject[] tilePrefabs;
         [SerializeField] private GameObject playerPrefab;
         [SerializeField] private GameObject buttonPrefab;
+        [SerializeField] private GameObject[] tilePrefabs;
 
 
         private void Start()
