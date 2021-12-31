@@ -1,26 +1,28 @@
 ﻿using UnityEngine;
-
+using UnityEngine.UI;
 
 namespace Smorb.ProceduralGeneration
 {
     public class MapGeneration : MonoBehaviour
     {
+        [SerializeField] private Text biomeText;
 
         [SerializeField] private int mapWidthInTiles;
         [SerializeField] private int mapDepthInTiles;
 
         [SerializeField] private Transform worldTransform;
-        [SerializeField] private GameObject tilePrefab;
 
         public int MapWidthInTiles { get => mapWidthInTiles; }
         public int MapDepthInTiles { get => mapDepthInTiles; }
 
 
-        public void GenerateMap()
+        public void GenerateMap(GameObject tilePrefab)
         {
             var tileSize = tilePrefab.GetComponent<MeshRenderer>().bounds.size;
             var tileWidth = (int)tileSize.x;
             var tileDepth = (int)tileSize.z;
+
+            biomeText.text = tilePrefab.name;
 
             for (int xTileIndex = 0; xTileIndex < MapWidthInTiles; ++xTileIndex)
             {

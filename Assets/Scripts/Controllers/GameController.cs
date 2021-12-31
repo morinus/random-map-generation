@@ -8,19 +8,35 @@ namespace Smorb.Controllers
         [SerializeField] private SpawnController spawnController;
         [SerializeField] private MapGeneration mapGeneration;
 
+        [SerializeField] private GameObject[] tilePrefabs;
         [SerializeField] private GameObject playerPrefab;
         [SerializeField] private GameObject buttonPrefab;
 
 
         private void Start()
         {
-            mapGeneration.GenerateMap();
+            InitGame();
+        }
 
-            spawnController.SpawnObjectToRandomLocation(buttonPrefab);
-            spawnController.SpawnObjectToRandomLocation(playerPrefab);
+        private void InitGame()
+        {
+            var randomTilePrefab = tilePrefabs[Random.Range(0, tilePrefabs.Length)];
 
+            mapGeneration.GenerateMap(randomTilePrefab);
+            Invoke(nameof(StartGame), 0.1f);
+            HideCursor();
+        }
+
+        private void HideCursor()
+        {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
+        }
+
+        private void StartGame()
+        {
+            spawnController.SpawnObjectToRandomLocation(buttonPrefab);
+            spawnController.SpawnObjectToRandomLocation(playerPrefab);
         }
     }
 }

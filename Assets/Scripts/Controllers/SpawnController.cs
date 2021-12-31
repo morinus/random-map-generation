@@ -11,8 +11,8 @@ namespace Smorb.Controllers
 
         public void SpawnObjectToRandomLocation(GameObject prefab)
         {
-            var randomPositionX = Random.Range(Consts.TILE_SIZE / 2, mapGeneration.MapDepthInTiles * Consts.TILE_SIZE - Consts.TILE_SIZE / 2);
-            var randomPositionZ = Random.Range(Consts.TILE_SIZE / 2, mapGeneration.MapWidthInTiles * Consts.TILE_SIZE - Consts.TILE_SIZE / 2);
+            var randomPositionX = Random.Range(Consts.TILE_SIZE, mapGeneration.MapDepthInTiles * Consts.TILE_SIZE - Consts.TILE_SIZE);
+            var randomPositionZ = Random.Range(Consts.TILE_SIZE, mapGeneration.MapWidthInTiles * Consts.TILE_SIZE - Consts.TILE_SIZE);
             var randomPosition = new Vector3(randomPositionX, Consts.MAX_HEIGHT, randomPositionZ);
 
             var spawnObj = Instantiate(prefab, randomPosition, Quaternion.identity, worldTransform);
